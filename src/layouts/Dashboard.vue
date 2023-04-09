@@ -14,8 +14,8 @@
           <hr class="w-auto color-red-600 space-y-28">
           <h3 class="opacity-50 uppercase text-xs font-semibold -tracking-wider mb-6">Categoty</h3>
 
-          <MenuItem :icon="StreamingIcon">Streaming </MenuItem>
-          <MenuItem :icon="Playlist">Playlist </MenuItem>
+          <MenuItem :icon="StreamingIcon">Tutorial </MenuItem>
+          <MenuItem :icon="Playlist">Community </MenuItem>
           
           <DarkMode/>
 
