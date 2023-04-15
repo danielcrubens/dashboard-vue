@@ -1,69 +1,108 @@
 <template>
-  <main class="bg-white dark:bg-gray-800 dark:text-white text-gray-800 px-2 flex  max-h-screen h-screen overflow-y-auto overflow-x-hidden">
-    <div class=" w-64 sticky top-0 z-20">
-      <span class="font-semibold p-6 block opacity-90">Skateboard</span>
+  <main
+    class="bg-white  dark:bg-dark-body  dark:text-white text-gray-800 px-2 flex  max-h-screen h-screen overflow-y-auto overflow-x-hidden">
+    <div class=" w-64 lg:block hidden top-10 z-20">
+      <span class="font-semibold pt-12 px-6 block opacity-90">Skateboard</span>
       <nav class="p-6">
-        <h3 class="opacity-50 uppercase text-xs font-semibold -tracking-wider mb-6">Menu</h3>
-        <div class="space-y-6">
+        <h3 class="opacity-50 uppercase text-xs  font-semibold -tracking-wider mb-6">Menu</h3>
+        <div class="space-y-6 ">
           <MenuItem :icon="HomeIcon" first>Dicover</MenuItem>
           <MenuItem :icon="TrendingUpIcon">Trending </MenuItem>
           <MenuItem :icon="StreamingIcon">Streaming </MenuItem>
           <MenuItem :icon="Playlist">Playlist </MenuItem>
           <MenuItem :icon="Bookmark">Bookmark </MenuItem>
-
-          <hr class="w-auto color-red-600 space-y-28">
-          <h3 class="opacity-50 uppercase text-xs font-semibold -tracking-wider mb-6">Categoty</h3>
-
-          <MenuItem :icon="StreamingIcon">Tutorial </MenuItem>
+          <div class="pt-6 pb-6">
+          <hr class="w-auto  opacity-30 ">
+        </div>          <h3 class="opacity-50 uppercase text-xs font-semibold -tracking-wider mb-6">Categoty</h3>
+          <MenuItem :icon="HomeIcon">Live Stream</MenuItem>
+          <MenuItem :icon="TrendingUpIcon">Tutorial </MenuItem>
+          <MenuItem :icon="StreamingIcon">Competition </MenuItem>
           <MenuItem :icon="Playlist">Community </MenuItem>
-          
-          <DarkMode/>
+          <div class="pt-6 pb-6">
+          <hr class="w-auto  opacity-30 ">
+        </div>
 
-        </div> 
+          <DarkMode />
+
+        </div>
       </nav>
     </div>
     <div class=" p-5 flex-1 h-screen relative ">
-      <header class="flex p-5 bg-white dark:bg-gray-800 sticky top-0 z-20 items-center justify-between">
-        <InputSearch class="w-96" />
-
-        <div class="flex items-center">
-          <div class="flex items-center space-x-3">
-            <!--  <Dropdown> -->
-            <Avatar class=" w-10 h-10 rounded-full overflow-hidden " />
-            <span>Thomas</span>
-            <ChevronDownIcon class="w-4 h-4" />
-            <!-- </Dropdown> -->
+      <header
+        class="flex lg:p-5 bg-white dark:bg-dark-body sticky space-x-3 md:space-x-auto top-0 z-20 items-center justify-between">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-24">
+            <div class="flex justify-center md:col-span-2">
+              <InputSearch class="lg:w-full md:w-96" />
+            </div>
+            <div class="flex justify-end">
+              <div class="flex items-center">
+                <div class="flex items-center space-x-3">
+                  <Avatar class=" w-10 h-10 rounded-full overflow-hidden " />
+                  <span>Thomas</span>
+                  <ChevronDownIcon class="w-4 h-4" />
+                </div>
+                <BellIcon class="w-5 h-5 ml-8 opacity-50 hover:opacity-100 cursor-pointer transition duration-100" />
+                <Notifications />
+              </div>
+            </div>
           </div>
-          <BellIcon class="w-5 h-5 ml-8 opacity-50 hover:opacity-100 cursor-pointer transition duration-100" />
-          <Notifications />
         </div>
-      </header> 
-      <div class="px-5 pb-5">
+
+      </header>
+      
+      <div class="md:px-5 md:pb-5">
         <h1 class="font-bold text-4xl mt-6 mb-4">Discover</h1>
         <div class="grid gap-4 grid-cols-12">
-          <div class="col-span-8 h-96 rounded-3xl overflow-hidden relative">
+          <div class="lg:col-span-8 col-span-12 h-96 rounded-3xl overflow-hidden relative">
             <div class=" flex w-full h-full">
-              <img class="object-cover w-full h-full" src="https://picsum.photos/2000/1400" alt="Imagem">
+              <img class="object-cover w-full h-full" src="../assets/images/skater.webp" alt="Skater">
             </div>
             <div class="z-10 absolute top-0 p-6 w-full bottom-0">
-              <h3 class="text-2xl max-w-xs">How to do Basic Jumping and how to landing safely</h3>
-              <div class="absolute right-6 bottom-6 px-2 py-1 rounded-lg bg-gray-800 bg-opacity-50 text-white">7 minutes
+              <h2 class="text-3xl max-w-xs font-semibold md:ml-4">How to do Basic Jumping and how to landing safely</h2>
+              <div class="container flex justify-start items-center mt-14">
+                <div class="md:ml-4">
+                  <div class="w-16 h-20 rounded-full overflow-hidden">
+                    <img class="object-none w-full h-full  " src="../assets/images/ThomasHope.svg" alt="Thomas Hope">
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="font-medium">Thomas Hope</h3>
+                  <div class="flex  gap-2 text-sm">
+                    <p>53k views</p> <span class="flex justify-start items-center">•</span>
+                    <p>2 weeks</p>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute right-6 bottom-6 px-2 py-1 rounded-lg bg-gray-800 bg-opacity-50 text-xs text-white">7 min
               </div>
             </div>
           </div>
-          <div class="col-span-4 h-96 rounded-3xl overflow-hidden relative">
+          <div class="lg:col-span-4 col-span-12 hidden lg:block h-96 rounded-3xl overflow-hidden relative">
             <div class=" flex w-full h-full">
-              <img class="object-cover w-full h-full" src="https://picsum.photos/2000/1400" alt="Imagem">
+              <img class="object-cover w-full h-full" src="../assets/images/image 3.svg" alt="Imagem">
             </div>
-            <div class="z-10 absolute top-0 p-6 w-full bottom-0">
-              <h3 class="text-2xl max-w-xs">How to do Basic Jumping and how to landing safely</h3>
-              <div class="absolute right-6 bottom-6 px-2 py-1 rounded-lg bg-gray-800 bg-opacity-50 text-white">7 minutes
+            <div class="z-10 absolute top-0 p-6 w-full bottom-0 md:ml-4">
+              <h3 class="text-3xl max-w-xs font-semibold">Skateboard Tips You need to know</h3>
+              <div class="container flex justify-start items-center mt-14">
+                <div>
+                  <h3 class="font-medium">Tony Andrew</h3>
+                  <div class="flex  gap-2 text-sm">
+                    <p>53k views</p> <span class="flex justify-start items-center">•</span>
+                    <p>2 weeks</p>
+                  </div>
+                  <div class="w-16 h-20 rounded-full overflow-hidden mt-1">
+                    <img class="object-none w-full h-full  " src="../assets/images/TonyAndrew.svg" alt="TonyAndrew">
+                  </div>
+                </div>
+              </div>
+              <div class="absolute right-6 bottom-6 px-2 py-1 rounded-lg bg-gray-800 bg-opacity-50 text-xs text-white">7 min
               </div>
             </div>
           </div>
         </div>
-        <h1 class=" text-2xl mt-6 mb-4">Most Watched</h1>
-        <div class="grid grid-cols-4 gap-4">
+        <h2 class=" text-2xl mt-6 mb-4">Most Watched</h2>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
           <CardItem v-for="n  of 4 " :key="n" />
         </div>
       </div>

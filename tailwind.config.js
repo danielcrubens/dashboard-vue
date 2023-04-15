@@ -8,7 +8,9 @@ export default {
   theme: {
     extend: {
       colors:{
-        orange: colors.orange
+        orange: colors.orange,
+        'dark-body': '#1F1D2B',
+        'menu-icon': '#FF7551',
       }
     },
   },
