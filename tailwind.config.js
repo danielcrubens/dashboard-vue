@@ -11,7 +11,13 @@ export default {
         orange: colors.orange,
         'dark-body': '#1F1D2B',
         'menu-icon': '#FF7551',
-      }
+      },
+      screens: {
+        'desktop': {'min': '768px'}
+      },
+      width: {
+        'desktop': '5rem',
+      }, 
     },
   },
   plugins: [],

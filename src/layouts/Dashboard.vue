@@ -38,7 +38,7 @@
             <div class="flex justify-end">
               <div class="flex items-center">
                 <div class="flex items-center space-x-3">
-                  <Avatar class=" w-10 h-10 rounded-full overflow-hidden " />
+                  <Avatar class=" w-9 h-9 rounded-full overflow-hidden " />
                   <span>Thomas</span>
                   <ChevronDownIcon class="w-4 h-4" />
                 </div>
@@ -101,14 +101,17 @@
             </div>
           </div>
         </div>
-        <h2 class=" text-2xl mt-6 mb-4">Most Watched</h2>
-        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
-          <CardItem v-for="n  of 4 " :key="n" />
+        <h2 class=" text-2xl mt-12 mb-4">Most Watched</h2>
+        <div class="grid lg:grid-cols-1 md:grid-cols-1 gap-4">
+          <CardItem v-for="item  of 1 " :key="item.id" />
+          <!--           <CardItem v-for="item in items" :key="item.id" />
+ -->
         </div>
       </div>
     </div>
   </main>
 </template>
+
 
 <script setup>
 
