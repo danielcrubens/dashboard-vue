@@ -1,5 +1,5 @@
 <template>
   <div class="flex ">
-    <img class="object-cover w-full h-full " src="https://picsum.photos/2000/1400" alt="Imagem">
+    <img class="object-cover w-full h-full " src="../assets/images/Avatar.svg" alt="Avatar">
   </div>
 </template>

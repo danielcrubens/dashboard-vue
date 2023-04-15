@@ -6,6 +6,8 @@
       </div>
     </div>
     <div class="body relative p-5">
+      <div class="absolute right-6 -top-28 px-2 py-1 rounded-lg bg-gray-800 bg-opacity-50 text-xs text-white">7 min
+              </div>
       <Avatar class="w-12 h-12 absolute right-2 -top-5 rounded-full overflow-hidden"/>
       <h5 class="text-xs opacity-50 mb-2">Andy William
          <div class="w-2 h-2 inline-block ml-2 rounded-full bg-green-400"></div>
