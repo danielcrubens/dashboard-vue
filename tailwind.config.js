@@ -18,6 +18,9 @@ export default {
       width: {
         'desktop': '5rem',
       }, 
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif']
+      },
     },
   },
   plugins: [],

@@ -12,15 +12,16 @@
           <MenuItem :icon="Playlist">Playlist </MenuItem>
           <MenuItem :icon="Bookmark">Bookmark </MenuItem>
           <div class="pt-6 pb-6">
-          <hr class="w-auto  opacity-30 ">
-        </div>          <h3 class="opacity-50 uppercase text-xs font-semibold -tracking-wider mb-6">Categoty</h3>
+            <hr class="w-auto  opacity-30 ">
+          </div>
+          <h3 class="opacity-50 uppercase text-xs font-semibold -tracking-wider mb-6">Categoty</h3>
           <MenuItem :icon="HomeIcon">Live Stream</MenuItem>
           <MenuItem :icon="TrendingUpIcon">Tutorial </MenuItem>
           <MenuItem :icon="StreamingIcon">Competition </MenuItem>
           <MenuItem :icon="Playlist">Community </MenuItem>
           <div class="pt-6 pb-6">
-          <hr class="w-auto  opacity-30 ">
-        </div>
+            <hr class="w-auto  opacity-30 ">
+          </div>
 
           <DarkMode />
 
@@ -29,7 +30,7 @@
     </div>
     <div class=" p-5 flex-1 h-screen relative ">
       <header
-        class="flex lg:p-5 bg-white dark:bg-dark-body sticky space-x-3 md:space-x-auto top-0 z-20 items-center justify-between">
+        class="flex lg:p-5 bg-white dark:bg-dark-body sticky space-x-3 md:space-x-auto top-0 z-20 items-center justify-between hidden md:block">
         <div class="container mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-24">
             <div class="flex justify-center md:col-span-2">
@@ -50,9 +51,21 @@
         </div>
 
       </header>
-      
+
+
+
+      <header class="md:hidden block">
+        <div class="container">
+          <div class="flex justify-between items-center">
+            <InputSearch class="w-full" />
+            <BellIcon class="w-5 h-5 ml-8 opacity-50 hover:opacity-100 cursor-pointer transition duration-100" />
+
+          </div>
+        </div>
+      </header>
+
       <div class="md:px-5 md:pb-5">
-        <h1 class="font-bold text-4xl mt-6 mb-4">Discover</h1>
+        <h1 class="font-semibold text-4xl mt-6 mb-4">Discover</h1>
         <div class="grid gap-4 grid-cols-12">
           <div class="lg:col-span-8 col-span-12 h-96 rounded-3xl overflow-hidden relative">
             <div class=" flex w-full h-full">
@@ -74,7 +87,8 @@
                   </div>
                 </div>
               </div>
-              <div class="absolute right-6 bottom-6 px-2 py-1 rounded-lg bg-gray-800 bg-opacity-50 text-xs text-white">7 min
+              <div class="absolute right-6 bottom-6 px-2 py-1 rounded-lg bg-gray-800 bg-opacity-50 text-xs text-white">7
+                min
               </div>
             </div>
           </div>
@@ -96,7 +110,8 @@
                   </div>
                 </div>
               </div>
-              <div class="absolute right-6 bottom-6 px-2 py-1 rounded-lg bg-gray-800 bg-opacity-50 text-xs text-white">7 min
+              <div class="absolute right-6 bottom-6 px-2 py-1 rounded-lg bg-gray-800 bg-opacity-50 text-xs text-white">7
+                min
               </div>
             </div>
           </div>
