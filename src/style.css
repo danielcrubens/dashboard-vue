@@ -5,3 +5,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  color:#ffff;
+  background:#FF7551;
+}
+::-moz-selection {
+  color: #ffff;
+  background: #FF7551;
+}
