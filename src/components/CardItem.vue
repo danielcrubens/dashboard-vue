@@ -42,7 +42,7 @@ const items = [
     author: "Johny Wise",
     title: "Prepare for your first skateboard jump",
     imageSrc: "../src/assets/svg/Skater-Card2.svg",
-    imageAvatar: "../src/assets/svg/AndyWilliam.svg",
+    imageAvatar: "../src/assets/svg/JohnyWise.svg",
 
     views: "12k",
     published: "1 month",
@@ -52,7 +52,7 @@ const items = [
     author: "Budi Hakim",
     title: "Tips to playing skateboard on the ramp",
     imageSrc: "../src/assets/svg/Skater-Card3.svg",
-    imageAvatar: "../src/assets/svg/AndyWilliam.svg",
+    imageAvatar: "../src/assets/svg/BudiHakim.svg",
 
     views: "87k",
     published: "3 days",

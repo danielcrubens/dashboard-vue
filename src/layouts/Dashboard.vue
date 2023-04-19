@@ -52,17 +52,27 @@
 
       </header>
 
-
-
       <header class="md:hidden block">
         <div class="container">
           <div class="flex justify-between items-center">
             <InputSearch class="w-full" />
             <BellIcon class="w-5 h-5 ml-8 opacity-50 hover:opacity-100 cursor-pointer transition duration-100" />
-
           </div>
         </div>
       </header>
+
+      <div class=" md:my-12 my-10 flex justify-evenly lg:hidden block">
+        <MenuItem :icon="HomeIcon" first>
+        </MenuItem>
+        <MenuItem :icon="TrendingUpIcon">
+        </MenuItem>
+        <MenuItem :icon="StreamingIcon">
+        </MenuItem>
+        <MenuItem :icon="Playlist">
+        </MenuItem>
+        <MenuItem :icon="Bookmark">
+        </MenuItem>
+      </div>
 
       <div class="md:px-5 md:pb-5">
         <h1 class="font-semibold lg:text-4xl md:text-3xl text-3xl mt-10 lg:mt-6 mb-4">Discover</h1>
@@ -74,7 +84,8 @@
 
             </div>
             <div class="z-10 absolute top-0 p-6 w-full bottom-0">
-              <h2 class="lg:text-3xl text-2xl  max-w-xs font-semibold mt-20 md:mt-auto md:ml-4">How to do Basic Jumping and how to landing safely</h2>
+              <h2 class="lg:text-3xl text-2xl  max-w-xs font-semibold mt-20 md:mt-auto md:ml-4">How to do Basic Jumping
+                and how to landing safely</h2>
               <div class="container flex justify-start items-center md:mt-14">
                 <div class="md:ml-4">
                   <div class="w-16 h-20 rounded-full overflow-hidden">
@@ -122,12 +133,15 @@
         </div>
         <h2 class=" text-2xl mt-12 mb-4 lg:font-normal md:font-medium font-bold">Most Watched</h2>
         <div class=" pb-9 md:pb-4 ">
-        <div class="grid lg:grid-cols-1 md:grid-cols-1 gap-4 ">
-          <CardItem v-for="item  of 1 " :key="item.id" />
+          <div class="grid lg:grid-cols-1 md:grid-cols-1 gap-4 ">
+            <CardItem v-for="item  of 1 " :key="item.id" />
+          </div>
         </div>
       </div>
     </div>
-    </div>
+
+
+
   </main>
 </template>
 
