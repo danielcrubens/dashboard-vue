@@ -79,7 +79,7 @@
         <div class="grid gap-4 grid-cols-12">
           <div class="lg:col-span-8 col-span-12 h-96 rounded-3xl overflow-hidden relative">
             <div class=" flex w-full h-full">
-              <img class="object-cover w-full h-full" src="../assets/images/skater.webp" alt="Skater">
+              <img class="object-cover w-full h-full" src="src/assets/images/skater.webp" alt="Skater">
               <div class="absolute inset-0 bg-menu-icon opacity-50 dark:bg-black "></div>
 
             </div>
@@ -89,7 +89,7 @@
               <div class="container flex justify-start items-center md:mt-14">
                 <div class="md:ml-4">
                   <div class="w-16 h-20 rounded-full overflow-hidden">
-                    <img class="object-none w-full h-full  " src="../assets/images/ThomasHope.svg" alt="Thomas Hope">
+                    <img class="object-none w-full h-full  " src="src/assets/images/ThomasHope.svg" alt="Thomas Hope">
                   </div>
                 </div>
                 <div class="ml-4">
@@ -107,7 +107,7 @@
           </div>
           <div class="lg:col-span-4 col-span-12 hidden lg:block h-96 rounded-3xl overflow-hidden relative">
             <div class=" flex w-full h-full">
-              <img class="object-cover w-full h-full" src="../assets/images/image3.svg" alt="Imagem">
+              <img class="object-cover w-full h-full" src="src/assets/images/image3.svg" alt="Imagem">
               <div class="absolute inset-0 bg-menu-icon opacity-50 dark:bg-black "></div>
 
             </div>
@@ -121,7 +121,7 @@
                     <p>2 weeks</p>
                   </div>
                   <div class="w-16 h-20 rounded-full overflow-hidden mt-1">
-                    <img class="object-none w-full h-full  " src="../assets/images/TonyAndrew.svg" alt="TonyAndrew">
+                    <img class="object-none w-full h-full  " src="src/assets/images/TonyAndrew.svg" alt="TonyAndrew">
                   </div>
                 </div>
               </div>
