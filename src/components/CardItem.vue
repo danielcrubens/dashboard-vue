@@ -41,8 +41,8 @@ const items = [
     id: 2,
     author: "Johny Wise",
     title: "Prepare for your first skateboard jump",
-    imageSrc: "../src/assets/svg/Skater-Card2.svg",
-    imageAvatar: "../src/assets/svg/JohnyWise.svg",
+    imageSrc: "/src/assets/svg/Skater-Card2.svg",
+    imageAvatar: "src/assets/svg/JohnyWise.svg",
 
     views: "12k",
     published: "1 month",
@@ -51,8 +51,8 @@ const items = [
     id: 3,
     author: "Budi Hakim",
     title: "Tips to playing skateboard on the ramp",
-    imageSrc: "../src/assets/svg/Skater-Card3.svg",
-    imageAvatar: "../src/assets/svg/BudiHakim.svg",
+    imageSrc: "/src/assets/svg/Skater-Card3.svg",
+    imageAvatar: "/src/assets/svg/BudiHakim.svg",
 
     views: "87k",
     published: "3 days",
@@ -61,8 +61,8 @@ const items = [
     id: 4,
     author: "Wijaya Abadi",
     title: "Basic Equipment to play skateboard safely",
-    imageSrc: "../src/assets/svg/Skater-Card4.svg",
-    imageAvatar: "../src/assets/svg/WijayaAbadi.svg",
+    imageSrc: "/src/assets/svg/Skater-Card4.svg",
+    imageAvatar: "/src/assets/svg/WijayaAbadi.svg",
 
     views: "25k",
     published: "1 week",
