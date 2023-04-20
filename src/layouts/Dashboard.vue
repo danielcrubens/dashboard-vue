@@ -107,7 +107,7 @@
           </div>
           <div class="lg:col-span-4 col-span-12 hidden lg:block h-96 rounded-3xl overflow-hidden relative">
             <div class=" flex w-full h-full">
-              <img class="object-cover w-full h-full" src="../assets/images/image 3.svg" alt="Imagem">
+              <img class="object-cover w-full h-full" src="../assets/images/image3.svg" alt="Imagem">
               <div class="absolute inset-0 bg-menu-icon opacity-50 dark:bg-black "></div>
 
             </div>
