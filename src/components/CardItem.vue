@@ -26,7 +26,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 const items = [
   {
     id: 1,
@@ -61,8 +61,8 @@ const items = [
     id: 4,
     author: "Wijaya Abadi",
     title: "Basic Equipment to play skateboard safely",
-    imageSrc: "/src/assets/svg/Skater-Card4.svg",
-    imageAvatar: "/src/assets/svg/WijayaAbadi.svg",
+    imageSrc: "https://i.ibb.co/gWRMc0Y/Skater-Card4.png",
+    imageAvatar: "https://i.ibb.co/njWsVr1/Wijaya-Abadi.png",
 
     views: "25k",
     published: "1 week",
