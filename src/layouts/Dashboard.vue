@@ -95,7 +95,7 @@
                 <div class="ml-4">
                   <h3 class="font-medium">Thomas Hope</h3>
                   <div class="flex  gap-2 text-sm">
-                    <p>53k views</p> <span class="flex justify-start items-center">•</span>
+                    <p>52k views</p> <span class="flex justify-start items-center">•</span>
                     <p>2 weeks</p>
                   </div>
                 </div>
