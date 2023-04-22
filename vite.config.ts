@@ -7,9 +7,10 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-       
+        'src/assets/images/ThomasHope.svg',
         'src/assets/images/skater.webp',
-       
+        'src/assets/images/image3.svg',
+        'src/assets/images/TonyAndrew.svg', 
       ]
     }
   }
